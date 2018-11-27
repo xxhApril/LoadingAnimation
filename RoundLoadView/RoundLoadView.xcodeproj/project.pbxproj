@@ -15,6 +15,9 @@
 		7ABA38FD2153C3F4003E4DBF /* RoundLoadViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABA38FC2153C3F4003E4DBF /* RoundLoadViewTests.swift */; };
 		7ABA39082153C3F4003E4DBF /* RoundLoadViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABA39072153C3F4003E4DBF /* RoundLoadViewUITests.swift */; };
 		7AC761DA21A53463002F8015 /* HsuBallRoatationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC761D921A53463002F8015 /* HsuBallRoatationView.swift */; };
+		7AC7626021AB99D0002F8015 /* HsuFPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7625F21AB99D0002F8015 /* HsuFPSView.swift */; };
+		7AF7499B21AD31DA006F6730 /* XiaoweiLogo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7AF7499A21AD31DA006F6730 /* XiaoweiLogo.otf */; };
+		7AF7499D21AD32E0006F6730 /* HsuFontHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7499C21AD32E0006F6730 /* HsuFontHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		7ABA39072153C3F4003E4DBF /* RoundLoadViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundLoadViewUITests.swift; sourceTree = "<group>"; };
 		7ABA39092153C3F4003E4DBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AC761D921A53463002F8015 /* HsuBallRoatationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HsuBallRoatationView.swift; sourceTree = "<group>"; };
+		7AC7625F21AB99D0002F8015 /* HsuFPSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HsuFPSView.swift; sourceTree = "<group>"; };
+		7AF7499A21AD31DA006F6730 /* XiaoweiLogo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = XiaoweiLogo.otf; sourceTree = "<group>"; };
+		7AF7499C21AD32E0006F6730 /* HsuFontHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HsuFontHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,12 @@
 		7ABA38E62153C3F2003E4DBF /* RoundLoadView */ = {
 			isa = PBXGroup;
 			children = (
+				7AF7499A21AD31DA006F6730 /* XiaoweiLogo.otf */,
 				7ABA38E72153C3F2003E4DBF /* AppDelegate.swift */,
 				7ABA38E92153C3F2003E4DBF /* ViewController.swift */,
+				7AC7625F21AB99D0002F8015 /* HsuFPSView.swift */,
 				7AC761D921A53463002F8015 /* HsuBallRoatationView.swift */,
+				7AF7499C21AD32E0006F6730 /* HsuFontHandler.swift */,
 				7ABA38EB2153C3F2003E4DBF /* Main.storyboard */,
 				7ABA38EE2153C3F3003E4DBF /* Assets.xcassets */,
 				7ABA38F02153C3F3003E4DBF /* LaunchScreen.storyboard */,
@@ -233,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ABA38F22153C3F3003E4DBF /* LaunchScreen.storyboard in Resources */,
+				7AF7499B21AD31DA006F6730 /* XiaoweiLogo.otf in Resources */,
 				7ABA38EF2153C3F3003E4DBF /* Assets.xcassets in Resources */,
 				7ABA38ED2153C3F2003E4DBF /* Main.storyboard in Resources */,
 			);
@@ -260,8 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ABA38EA2153C3F2003E4DBF /* ViewController.swift in Sources */,
+				7AF7499D21AD32E0006F6730 /* HsuFontHandler.swift in Sources */,
 				7ABA38E82153C3F2003E4DBF /* AppDelegate.swift in Sources */,
 				7AC761DA21A53463002F8015 /* HsuBallRoatationView.swift in Sources */,
+				7AC7626021AB99D0002F8015 /* HsuFPSView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

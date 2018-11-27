@@ -57,10 +57,46 @@
                                     <action selector="c2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kil-3P-Irw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-Yj-qaC">
+                                <rect key="frame" x="80" y="516" width="215" height="35"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="GtQ-DD-UGN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPm-9O-K89">
+                                <rect key="frame" x="80" y="580" width="31" height="30"/>
+                                <state key="normal" title="小微"/>
+                                <connections>
+                                    <action selector="changeFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NRy-eX-INH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jv7-VN-glS">
+                                <rect key="frame" x="264" y="580" width="31" height="30"/>
+                                <state key="normal" title="正常"/>
+                                <connections>
+                                    <action selector="normalFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCQ-yj-Rgw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p4Z-Yj-qaC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="C29-3K-IjC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p4Z-Yj-qaC" secondAttribute="bottom" constant="116" id="D2a-rc-rpM"/>
+                            <constraint firstItem="Jv7-VN-glS" firstAttribute="trailing" secondItem="p4Z-Yj-qaC" secondAttribute="trailing" id="LdG-uO-Ful"/>
+                            <constraint firstItem="yPm-9O-K89" firstAttribute="top" secondItem="p4Z-Yj-qaC" secondAttribute="bottom" constant="29" id="Upm-3D-aaP"/>
+                            <constraint firstItem="p4Z-Yj-qaC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a5z-dj-wc5"/>
+                            <constraint firstItem="Jv7-VN-glS" firstAttribute="centerY" secondItem="yPm-9O-K89" secondAttribute="centerY" id="dxa-Fy-r4c"/>
+                            <constraint firstItem="yPm-9O-K89" firstAttribute="leading" secondItem="p4Z-Yj-qaC" secondAttribute="leading" id="yiX-OK-39U"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="fontLabel" destination="p4Z-Yj-qaC" id="w2e-OM-AVC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

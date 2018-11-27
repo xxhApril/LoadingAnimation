@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var fontLabel: UILabel!
+    private let Text = "今天是个好天气"
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        fontLabel.text = Text
+        HsuFPSView.shared.startMonitoring()
+        
+        HsuFontHandler.shared.setupFont()
     }
 
     @IBAction func c1(_ sender: Any) {
@@ -36,5 +40,16 @@ class ViewController: UIViewController {
     @IBAction func c3(_ sender: Any) {
         view.dismissLoading()
     }
+    
+    // 特殊字体
+    @IBAction func changeFont(_ sender: Any) {
+        fontLabel.font = UIFont(name: HsuFontHandler.shared.fontNameString ?? "", size: 20) ?? UIFont.systemFont(ofSize: 20)
+    }
+    
+    // 正常字体
+    @IBAction func normalFont(_ sender: Any) {
+        fontLabel.font = UIFont.systemFont(ofSize: 20)
+    }
+    
 }
 
